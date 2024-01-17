@@ -1,8 +1,8 @@
 .vscode
 .husky
 .next
-.yarn
 /node_modules
-/.pnp
-.pnp.cjs
-/.next/
+
+# Ignore artifacts:
+build
+coverage
