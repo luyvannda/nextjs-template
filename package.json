@@ -30,7 +30,7 @@
     "typescript": "^5"
   },
   "lint-staged": {
-    "*.{ts,tsx,js}": "eslint --cache --fix",
-    "*.{ts,tsx,js,css,md}": "prettier --write --ignore-unknown"
+    "*.{js,ts,jsx,tsx}": "eslint --cache --fix",
+    "*.{js,ts,jsx,tsx,css,md}": "prettier --write --ignore-unknown"
   }
 }
