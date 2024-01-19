@@ -9,6 +9,10 @@
     "lint": "next lint",
     "prepare": "husky install"
   },
+  "lint-staged": {
+    "*.{js,ts,jsx,tsx}": "eslint --cache --fix",
+    "src/**/*.{js,ts,jsx,tsx,css,md}": "prettier --write --ignore-unknown"
+  },
   "dependencies": {
     "next": "14.0.4",
     "react": "^18",
@@ -28,9 +32,5 @@
     "prettier": "3.2.4",
     "tailwindcss": "^3.3.0",
     "typescript": "^5"
-  },
-  "lint-staged": {
-    "*.{js,ts,jsx,tsx}": "eslint --cache --fix",
-    "src/**/*.{js,ts,jsx,tsx,css,md}": "prettier --write --ignore-unknown"
   }
 }

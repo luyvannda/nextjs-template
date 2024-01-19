@@ -1,0 +1,25 @@
+{
+  "liveServer.settings.donotShowInfoMsg": true,
+  "editor.formatOnSave": true,
+  "git.autofetch": true,
+  "explorer.confirmDelete": false,
+  "liveServer.settings.CustomBrowser": "chrome",
+  "editor.formatOnPaste": true,
+  "html.format.wrapLineLength": 80,
+  "liveSassCompile.settings.watchOnLaunch": true,
+  "editor.wordWrap": "on",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "workbench.editor.enablePreview": false,
+  "html.format.preserveNewLines": false,
+  "html.format.indentInnerHtml": true,
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "workbench.iconTheme": "material-icon-theme"
+}

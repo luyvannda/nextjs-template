@@ -1,0 +1,14 @@
+{
+    "recommendations": [
+        "formulahendry.code-runner",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "streetsidesoftware.code-spell-checker",
+        "bradlc.vscode-tailwindcss",
+        "mikestead.dotenv",
+        "aaron-bond.better-comments",
+        "PKief.material-icon-theme",
+        "pmneo.tsimporter",
+        "oderwat.indent-rainbow"
+    ]
+}
