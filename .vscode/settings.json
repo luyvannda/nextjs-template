@@ -4,6 +4,7 @@
   "git.autofetch": true,
   "explorer.confirmDelete": false,
   "liveServer.settings.CustomBrowser": "chrome",
+  "workbench.iconTheme": "material-icon-theme",
   "editor.formatOnPaste": true,
   "html.format.wrapLineLength": 80,
   "liveSassCompile.settings.watchOnLaunch": true,
@@ -12,14 +13,20 @@
   "workbench.editor.enablePreview": false,
   "html.format.preserveNewLines": false,
   "html.format.indentInnerHtml": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
-  "workbench.iconTheme": "material-icon-theme"
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  }
 }
