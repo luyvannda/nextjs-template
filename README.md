@@ -3,3 +3,7 @@ This is 🦸‍♀️ A simple template for Next.js. We hope to ship our project
 Special thanks to the next-dev-team, the original authors who inspired this template.
 
 https://github.com/next-dev-team/nextjs-biolerplate/tree/main
+
+Shopping template inspired by
+
+https://www.allbirds.com/
