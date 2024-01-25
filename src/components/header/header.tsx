@@ -8,9 +8,11 @@ export default function Header() {
           Logo
         </Link>
         <div className="space-x-4 text-xl">
-          <Link href="/product">Product</Link>
-          <Link href="/reviews">Reviews</Link>
+          <Link href="/products">Products</Link>
+          <Link href="#">Search</Link>
+          <Link href="/account">Account</Link>
           <Link href="/contactus">Contact Us</Link>
+          <Link href="#">Cart</Link>
         </div>
       </nav>
     </div>
