@@ -13,6 +13,11 @@
     "*.{js,ts,jsx,tsx}": "eslint --cache --fix",
     "src/**/*.{js,ts,jsx,tsx,css,md}": "prettier --write --ignore-unknown"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run build"
+    }
+  },
   "dependencies": {
     "next": "14.0.4",
     "react": "^18",
