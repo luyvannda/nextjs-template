@@ -1,3 +1,9 @@
+import { SAuthForm } from '@/components/auth';
+
 export default function AccountPage() {
-  return <div>This an Account Page!</div>;
+  return (
+    <div>
+      <SAuthForm />
+    </div>
+  );
 }

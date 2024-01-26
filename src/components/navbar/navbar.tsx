@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export default function Header() {
+export default function NavBar() {
   return (
     <div className="w-full bg-gray-400 text-white z-10">
       <nav className="container relative flex flex-wrap items-center justify-between mx-auto p-4">
