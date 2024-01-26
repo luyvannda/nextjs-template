@@ -1,9 +1,6 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import './globals.css';
 import { SNavBar } from '@/components/navbar';
-
-const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Next App template',
@@ -17,9 +14,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className="bg-slate-100 h-screen w-screen flex flex-col">
         <SNavBar />
-        {children}
+        <div className="h-full w-full flex flex-col justify-center items-center">
+          {children}
+        </div>
       </body>
     </html>
   );

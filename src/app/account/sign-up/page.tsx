@@ -1,3 +1,3 @@
 export default function SignUpPage() {
-  return <div>Sign up</div>;
+  return <div className="bg-blue-400">Sign up</div>;
 }

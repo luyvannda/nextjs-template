@@ -12,7 +12,7 @@ export default function NavBar() {
         <div className="space-x-4 text-xl">
           <Link href="/products">Products</Link>
           <Link href="#">Search</Link>
-          <Link href="/account" className={buttonVariants()}>
+          <Link href="/account/sign-in" className={buttonVariants()}>
             Sign in
           </Link>
           <Link href="/contactus">Contact Us</Link>
