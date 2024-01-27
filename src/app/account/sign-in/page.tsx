@@ -1,4 +1,4 @@
-import { SignInForm } from '@/components/form';
+import { SignInForm } from '@/hooks/form';
 
 export default function SignInPage() {
   return (

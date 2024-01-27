@@ -1,1 +1,1 @@
-This is a folder that contain: react form hooks.
+This folder contain hooks such as: react form hooks.
