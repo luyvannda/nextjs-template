@@ -21,7 +21,10 @@ const FormSchema = z.object({
     .string()
     .nonempty('Please specify an email')
     .email('Please specify a valid email'),
-  password: z.string().nonempty('Password cannot be emptied'),
+  password: z
+    .string()
+    .nonempty('Password is required')
+    .min(8, 'Password must have more than 8 characters'),
 });
 
 export default function SignInForm() {
@@ -32,8 +35,8 @@ export default function SignInForm() {
     },
   });
 
-  const onSubmit = () => {
-    console.log('Form Submitted');
+  const onSubmit = (values: z.infer<typeof FormSchema>) => {
+    console.log(values);
   };
 
   return (
@@ -62,7 +65,11 @@ export default function SignInForm() {
               <FormItem>
                 <FormLabel>Password</FormLabel>
                 <FormControl>
-                  <Input placeholder="Enter your password" {...field} />
+                  <Input
+                    type="password"
+                    placeholder="Enter your password"
+                    {...field}
+                  />
                 </FormControl>
 
                 <FormMessage />
@@ -79,7 +86,10 @@ export default function SignInForm() {
       </div>
       <p className="text-center text-sm text-gray-600 mt-2">
         If you don&apos;t have an account, please&nbsp;
-        <Link href="/account/sign-up">sign up</Link>
+        <Link href="/account/sign-up" className="text-blue-500 hover:underline">
+          Sign up
+        </Link>
+        .
       </p>
     </Form>
   );
