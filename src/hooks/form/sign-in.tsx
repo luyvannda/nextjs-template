@@ -1,5 +1,5 @@
 'use client';
-
+import Link from 'next/link';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import * as z from 'zod';
@@ -14,10 +14,14 @@ import {
 
 import { Input } from '@/components/ui/input';
 import { Button } from '../../components/ui/button';
+import SignUpPage from '../../app/account/sign-up/page';
 
 const FormSchema = z.object({
-  email: z.string(),
-  password: z.string(),
+  email: z
+    .string()
+    .nonempty('Please specify an email')
+    .email('Please specify a valid email'),
+  password: z.string().nonempty('Password cannot be emptied'),
 });
 
 export default function SignInForm() {
@@ -70,6 +74,13 @@ export default function SignInForm() {
           Sign in
         </Button>
       </form>
+      <div className="mx-auto my-4 flex w-full items-center justify-evenly before:mr-4 before:block before:h-px before:flex-grow before:bg-stone-400 after:ml-4 after:block after:h-px after:flex-grow after:bg-stone-400">
+        or
+      </div>
+      <p className="text-center text-sm text-gray-600 mt-2">
+        If you don&apos;t have an account, please&nbsp;
+        <Link href="/account/sign-up">sign up</Link>
+      </p>
     </Form>
   );
 }
