@@ -1,3 +1,9 @@
+import { ShopSignUp } from '@/hooks/form';
+
 export default function SignUpPage() {
-  return <div className="bg-blue-400">Sign up</div>;
+  return (
+    <div className="">
+      <ShopSignUp />
+    </div>
+  );
 }

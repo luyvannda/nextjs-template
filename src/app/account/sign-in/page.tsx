@@ -1,9 +1,9 @@
-import { SignInForm } from '@/hooks/form';
+import { ShopSignIn } from '@/hooks/form';
 
 export default function SignInPage() {
   return (
     <div className="">
-      <SignInForm />
+      <ShopSignIn />
     </div>
   );
 }
