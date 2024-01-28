@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { SNavBar } from '@/components/navbar';
+import { SRecoilRoot } from '@/states/recoil';
 
 export const metadata: Metadata = {
   title: 'Next App template',
@@ -15,10 +16,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-slate-100 h-screen w-screen flex flex-col">
-        <SNavBar />
-        <div className="h-full w-full flex flex-col justify-center items-center">
-          {children}
-        </div>
+        <SRecoilRoot>
+          <SNavBar />
+          <div className="h-full w-full flex flex-col justify-center items-center">
+            {children}
+          </div>
+        </SRecoilRoot>
       </body>
     </html>
   );
