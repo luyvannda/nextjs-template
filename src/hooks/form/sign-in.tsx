@@ -14,7 +14,6 @@ import {
 
 import { Input } from '@/components/ui/input';
 import { Button } from '../../components/ui/button';
-import SignUpPage from '../../app/account/sign-up/page';
 
 const FormSchema = z.object({
   email: z
@@ -32,6 +31,7 @@ export default function SignInForm() {
     resolver: zodResolver(FormSchema),
     defaultValues: {
       email: '',
+      password: '',
     },
   });
 
