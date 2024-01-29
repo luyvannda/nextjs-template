@@ -30,7 +30,7 @@ export default function NavBar() {
           </Link>
 
           <Link href="#" className="flex items-center gap-[2px] text-sm">
-            <ShoppingCart />({cart})
+            <ShoppingCart />({cart.length})
           </Link>
 
           <Link href="/account/sign-in" className={buttonVariants()}>

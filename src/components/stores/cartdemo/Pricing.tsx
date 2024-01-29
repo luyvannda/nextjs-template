@@ -5,12 +5,24 @@ import { Button } from '@/components/ui/button';
 import { useRecoilState } from 'recoil';
 import { cartState } from '@/states/atoms/cartState';
 import { ShoppingCart } from 'lucide-react';
+import { Item } from '@/models/item';
 
 export default function Pricing() {
   const [cart, setCart] = useRecoilState(cartState);
 
+  const getRandomItem = () => {
+    const items = ['Nike', 'Adidas', 'Puma', 'Fila', 'Gucci', 'Dior'];
+    return items[Math.floor(Math.random() * items.length)];
+  };
+
   const addToCart = () => {
-    setCart(prevCart => prevCart + 1);
+    const newItem = {
+      id: Math.random(),
+      description: getRandomItem(),
+      price: 50,
+    } as Item;
+
+    setCart([...cart, newItem]);
   };
 
   return (
@@ -27,7 +39,7 @@ export default function Pricing() {
       <p>Price: $50</p>
       <div className="flex items-center gap-2">
         <ShoppingCart />
-        <p>{cart}</p>
+        <p>{cart.length}</p>
       </div>
 
       <Button
