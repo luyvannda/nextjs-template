@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { SNavBar } from '@/components/navbar';
-import { SRecoilRoot } from '@/states/recoil';
+import { SRecoilRoot } from '@/states';
 
 export const metadata: Metadata = {
   title: 'Next App template',
