@@ -23,15 +23,17 @@ export default function NavBar() {
             <Search />
           </Link>
 
+          <Link href="#" className="flex items-center gap-[2px] text-sm">
+            <ShoppingCart />
+            (0)
+          </Link>
+
           <Link href="/account/sign-in" className={buttonVariants()}>
             <CircleUserRound className="mr-1" />
             Sign in
           </Link>
           <Link href="/contactus">
             <HelpCircle />
-          </Link>
-          <Link href="#">
-            <ShoppingCart />
           </Link>
         </div>
       </nav>
