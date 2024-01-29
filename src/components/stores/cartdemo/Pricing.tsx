@@ -2,13 +2,15 @@
 
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { useRecoilState } from 'recoil';
+import { useRecoilState, useRecoilValue } from 'recoil';
 import { cartState } from '@/states/atoms/cartState';
 import { ShoppingCart } from 'lucide-react';
 import { Item } from '@/models/item';
+import { cartTotal } from '@/states/selectors/cartTotal';
 
 export default function Pricing() {
   const [cart, setCart] = useRecoilState(cartState);
+  const totalAmount = useRecoilValue(cartTotal);
 
   const getRandomItem = () => {
     const items = ['Nike', 'Adidas', 'Puma', 'Fila', 'Gucci', 'Dior'];
@@ -41,7 +43,7 @@ export default function Pricing() {
         <ShoppingCart />
         <p>{cart.length}</p>
       </div>
-
+      <p>Total: ${totalAmount}</p>
       <Button
         onClick={addToCart}
         className="hover:bg-green-400"
