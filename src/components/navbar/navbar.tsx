@@ -1,3 +1,5 @@
+'use client';
+
 import Link from 'next/link';
 import { buttonVariants } from '@/components/ui/button';
 import {
@@ -7,8 +9,12 @@ import {
   Search,
   CircleUserRound,
 } from 'lucide-react';
+import { useRecoilValue } from 'recoil';
+import { cartState } from '@/states/atoms/cartState';
 
 export default function NavBar() {
+  const cart = useRecoilValue(cartState);
+
   return (
     <div className="w-full bg-gray-400 text-white z-10">
       <nav className="container relative flex flex-wrap items-center justify-between mx-auto px-4 py-2">
@@ -24,8 +30,7 @@ export default function NavBar() {
           </Link>
 
           <Link href="#" className="flex items-center gap-[2px] text-sm">
-            <ShoppingCart />
-            (0)
+            <ShoppingCart />({cart})
           </Link>
 
           <Link href="/account/sign-in" className={buttonVariants()}>

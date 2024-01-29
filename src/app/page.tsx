@@ -1,9 +1,9 @@
-import Pricing from '@/components/stores/cartdemo/Pricing';
+import { DemoPricing } from '@/components/stores/cartdemo';
 
 export default function Home() {
   return (
     <div>
-      <Pricing />
+      <DemoPricing />
     </div>
   );
 }
