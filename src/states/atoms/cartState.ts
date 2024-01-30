@@ -1,9 +1,9 @@
 'use client';
 
 import { atom } from 'recoil';
-import { Item } from '@/models/item';
+import { ProductType } from '@/types/productTypes';
 
-export const cartState = atom<Item[]>({
+export const cartState = atom<ProductType[]>({
   key: 'cart',
   default: [],
 });
