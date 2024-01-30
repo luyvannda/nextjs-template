@@ -1,5 +1,5 @@
 import { selector } from 'recoil';
-import { cartState } from '../atoms/cartState';
+import { cartState } from '../atoms/storeState';
 
 export const cartTotal = selector({
   key: 'cartTotal',

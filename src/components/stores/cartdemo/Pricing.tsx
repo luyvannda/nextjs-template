@@ -3,9 +3,9 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { useRecoilState, useRecoilValue } from 'recoil';
-import { cartState } from '@/states/atoms/cartState';
+import { cartState } from '@/states/atoms/storeState';
 import { ShoppingCart } from 'lucide-react';
-import { Item } from '@/models/item';
+import { Product } from '@/types/productTypes';
 import { cartTotal } from '@/states/selectors/cartTotal';
 
 export default function Pricing() {
@@ -22,7 +22,7 @@ export default function Pricing() {
       id: Math.random(),
       description: getRandomItem(),
       price: 50,
-    } as Item;
+    } as Product;
 
     setCart([...cart, newItem]);
   };

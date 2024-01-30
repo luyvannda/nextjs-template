@@ -10,7 +10,7 @@ import {
   CircleUserRound,
 } from 'lucide-react';
 import { useRecoilValue } from 'recoil';
-import { cartState } from '@/states/atoms/cartState';
+import { cartState } from '@/states/atoms/storeState';
 
 export default function NavBar() {
   const cart = useRecoilValue(cartState);
