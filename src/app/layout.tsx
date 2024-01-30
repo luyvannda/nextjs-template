@@ -15,12 +15,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-slate-100 h-screen w-screen flex flex-col">
+      <body className="bg-slate-100 h-screen w-screen">
         <SRecoilRoot>
           <SNavBar />
-          <div className="h-full w-full flex flex-col justify-center items-center">
-            {children}
-          </div>
+          {children}
         </SRecoilRoot>
       </body>
     </html>

@@ -17,7 +17,7 @@ export default function NavBar() {
 
   return (
     <div className="w-full bg-gray-400 text-white z-10">
-      <nav className="container relative flex flex-wrap items-center justify-between mx-auto px-4 py-2">
+      <nav className="container flex flex-wrap items-center justify-between mx-auto px-4 py-2">
         <div className="flex items-center gap-4 text-xl">
           <Link href="/" className="">
             <Store />
